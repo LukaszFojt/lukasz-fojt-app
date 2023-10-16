@@ -19,7 +19,7 @@ const port = process.env.PORT || 3500;
 
 const bcryptSalt = bcrypt.genSaltSync(10);
 const jwtSecret = process.env.JWT_SECRET;
-const bucket = 'lukasz-booking-app';
+const bucket = 'lukasz-fojt-app';
 
 app.use(express.json());
 app.use(cookieParser());
