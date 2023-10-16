@@ -1,0 +1,81 @@
+Vite app on React
+npm create vite@latest client
+cd client
+npm install
+npm run dev
+
+____________________
+TailwindCSS for Vite
+1.
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+2.
+tailwind.config.js
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+3.
+index.css,App.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+4.
+npm run dev	i można używać klas z tcss
+
+____________________
+Github repository
+
+git init
+git add .
+git commit -m "message"
+git branch -M main
+git remote add origin https://github.com/LukaszFojt/nazwa.git
+git push -u origin main
+
+____________________
+
+client
+npm i axios date-fns react-router-dom react-icons react-intersection-observer react-tilt react-vertical-timeline-component three @react-three/fiber @react-three/drei framer-motion maath
+
+api
+npm i bcryptjs cookie-parser cors dotenv express image-downloader jsonwebtoken mongoose multer
+
+api -> 
+models, User.js, Post.js , uploads, index.js
+
+client ->
+Routing
+Login,Register pages
+
+  const [name,setName] = useState('');
+  const [email,setEmail] = useState('');
+  const [password,setPassword] = useState('');
+
+  value={name}
+  onChange={ev => setName(e.target.value)}
+  
+  ____________________
+  npm i axios
+  
+  <form     
+    className='max-w-md mx-auto'
+    onSubmit={registerUser}
+  >
+
+  function registerUser(ev) {
+  ev.preventDefault();
+  axios.get('http://localhost:4000/test')
+}
+api index.js ->
+npm i cors
