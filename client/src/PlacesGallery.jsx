@@ -38,10 +38,10 @@ const PlacesGallery = ({place}) => {
       <div className='grid gap-2 grid-cols-[2fr_1fr]'>
         <div>
           {place.photos?.[0] && (
-            <img
+            <Image
               onClick={() => setShowAllPhotos(true)}
               className='aspect-square w-full object-cover rounded-l-3xl cursor-pointer'
-              src={'http://localhost:4000/uploads/'+place.photos?.[0]}
+              src={place.photos?.[0]}
               alt='photo'
             />
           )}
