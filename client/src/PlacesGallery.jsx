@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Image } from './Image';
+import Image from './Image';
 
 const PlacesGallery = ({place}) => {
 

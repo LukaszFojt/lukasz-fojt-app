@@ -1,4 +1,4 @@
-import {Image} from './Image';
+import Image from './Image';
 
 const PlaceImg = ({place, index=0, className=null}) => {
 
